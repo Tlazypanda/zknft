@@ -1,0 +1,14 @@
+{
+    "name" : "ZKYC Verified Badge",
+    "image" : "https://bafkreighnileoh2ehodanv6mzzgxbru6hszsp462rwiaufzpncgmwltqam.ipfs.nftstorage.link/",
+    "attributes": [
+        {
+          "trait_type": "verification_type", 
+          "value": "Age Limit Verification"
+        }, 
+        {
+          "trait_type": "expiry_timestamp", 
+          "value": "22-06-2045"
+        }
+    ]
+}
