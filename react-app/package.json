@@ -1,0 +1,72 @@
+{
+  "name": "nft-ui",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@arcana/auth": "^0.1.1",
+    "@arcana/storage": "^0.2.0",
+    "@dicebear/adventurer": "^4.10.2",
+    "@dicebear/adventurer-neutral": "^4.10.2",
+    "@dicebear/avatars": "^4.10.2",
+    "@dicebear/big-smile": "^4.10.2",
+    "@dicebear/croodles": "^4.10.2",
+    "@emotion/react": "^11.9.0",
+    "@emotion/styled": "^11.8.1",
+    "@google-cloud/vision": "^2.4.2",
+    "@mui/icons-material": "^5.8.0",
+    "@mui/material": "^5.8.1",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^11.2.7",
+    "@testing-library/user-event": "^12.8.3",
+    "axios": "^0.27.2",
+    "dotenv": "^10.0.0",
+    "ethers": "^5.4.7",
+    "ipfs-car": "^0.7.0",
+    "nft.storage": "^6.3.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-dotenv": "^0.1.3",
+    "react-icons": "^4.4.0",
+    "react-scripts": "4.0.3",
+    "react-svg": "^15.0.1",
+    "readline": "^1.3.0",
+    "smart-docs-parser": "^1.1.2",
+    "snarkjs": "^0.4.24",
+    "web-vitals": "^1.1.2"
+  },
+  "scripts": {
+    "start": "react-dotenv && react-scripts start",
+    "build": "react-dotenv && react-scripts build",
+    "test": "react-dotenv && react-scripts test",
+    "eject": "react-dotenv && react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ],
+    "env": {
+      "es2020": true,
+      "browser": true,
+      "node": true,
+      "mocha": true
+    }
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@svgr/webpack": "^6.2.1",
+    "react-app-rewired": "^2.2.1",
+    "wasm-loader": "^1.3.0"
+  }
+}
