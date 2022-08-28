@@ -5,6 +5,7 @@ import twitterLogo from './assets/twitter-logo.svg';
 import gratitudeGif from './assets/gratitude-thankful.gif';
 import myNft from './utils/MyNft.json';
 import zkabi from './utils/zkabi.json';
+import zkNFT from './utils/zkNFT.json';
 import myGratitude from './utils/MyGratitude.json';
 import { ethers } from "ethers";
 import { styled } from '@mui/material/styles';
@@ -13,7 +14,7 @@ import IconButton from '@mui/material/IconButton';
 import PhotoCamera from '@mui/icons-material/PhotoCamera';
 import Input from '@mui/material/Input';
 import TextField from '@mui/material/TextField';
-import { NFTStorage, File } from 'nft.storage';
+//import { NFTStorage, File } from 'nft.storage';
 import env from "react-dotenv";
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
@@ -28,6 +29,7 @@ import { StorageProvider } from '@arcana/storage/dist/standalone/storage.umd';
 import { AuthProvider } from '@arcana/auth';
 import { BsInfoCircle } from "react-icons/bs";
 import Grid from '@mui/material/Grid';
+import { NFTStorage } from 'nft.storage/dist/bundle.esm.min.js'
 
 import axios from 'axios';
 const fs = require("fs");
@@ -43,7 +45,7 @@ const InputUpload = styled('input')({
 
 
 const OPENSEA_LINK = '';
-const CONTRACT_ADDRESS = "0xD79a1976d1D6DEB0E43E5AA42548509752F0Ce36";
+const CONTRACT_ADDRESS = "0xb18bb99c7849D39a27395dE2f412cc470f76947E";
 const ZK_CONTRACT_ADDRESS = "0xd832fbBd00d73e2Bb850F1485E598f15b8Df695b";
 const NFT_STORAGE_KEY = env.NFT_STORAGE_KEY;
 
@@ -141,6 +143,7 @@ console.log(resObj['age']);
 await Uploader.upload(imageblob);
   //Uploader.upload(imageAadharback);
   console.log("Uploaded to Arcana");
+  alert("Data extracted & Uploaded to Arcana");
     }
     catch(error){
       console.log(error)
@@ -380,6 +383,7 @@ async function getExampleImage(path) {
                 console.log("Going to pop wallet now to check proof...")
                 let proof = await connectedContract.verifyProof(argv[0], [argv2[1]]);
                 console.log(proof);
+                  alert("Proof verified");
                 isage(true);
               }
             } else {
@@ -387,6 +391,7 @@ async function getExampleImage(path) {
             }
         } catch (error) {
           console.log("Proof Failed");
+          alert("Proof failed");
           isage(false);
             console.log(error)
         }
